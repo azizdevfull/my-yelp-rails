@@ -17,6 +17,7 @@ class RestaurantsTest < ApplicationSystemTestCase
     fill_in "City", with: @restaurant.city
     fill_in "Description", with: @restaurant.description
     fill_in "Name", with: @restaurant.name
+    fill_in "User", with: @restaurant.user_id
     click_on "Create Restaurant"
 
     assert_text "Restaurant was successfully created"
@@ -30,6 +31,7 @@ class RestaurantsTest < ApplicationSystemTestCase
     fill_in "City", with: @restaurant.city
     fill_in "Description", with: @restaurant.description
     fill_in "Name", with: @restaurant.name
+    fill_in "User", with: @restaurant.user_id
     click_on "Update Restaurant"
 
     assert_text "Restaurant was successfully updated"

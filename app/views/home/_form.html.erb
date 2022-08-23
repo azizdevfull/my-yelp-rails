@@ -18,9 +18,10 @@
   <div><br>
     <%= form.text_field :description, class:"form-control", placeholder: "Restaurant description"%>
   </div>
+  <%= form.number_field :user_id, id: :restaurant_user_id, value: current_user.id, type: :hidden %>
 
   <div><br>
-    <%= form.text_field :city, class:"form-control", placeholder: "Restourant city" %>
+    <%= form.text_field :city, class:"form-control", placeholder: "Restaurant city" %>
   </div><br>
 
   <div>

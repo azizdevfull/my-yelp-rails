@@ -14,6 +14,11 @@
   </thead>
   <tbody>
   <% @restaurants.each do |restaurant| %>
+  
+  <% if restaurant.user == current_user %>
+    
+ 
+  
     <tr>
       <th scope="row"class="table-dark"><%= restaurant.id %></th>
       <td class="table-dark"><%= restaurant.name %></td>
@@ -22,6 +27,6 @@
     </tr>
     
     <% end %>
-    
+     <% end %>
   </tbody>
 </table></div>
