@@ -1,0 +1,27 @@
+
+<h1>Restaurants</h1>
+
+
+<div class="container">
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Description</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @restaurants.each do |restaurant| %>
+    <tr>
+      <th scope="row"class="table-dark"><%= restaurant.id %></th>
+      <td class="table-dark"><%= restaurant.name %></td>
+      <td class="table-dark"><%= restaurant.description %></td>
+      <td class="table-dark"><%= restaurant.city %></td>
+    </tr>
+    
+    <% end %>
+    
+  </tbody>
+</table></div>

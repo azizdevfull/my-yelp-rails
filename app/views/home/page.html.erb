@@ -1,2 +1,14 @@
-<h1>Home#page</h1>
-<p>Find me in app/views/home/page.html.erb</p>
+<% if current_user %>
+<h1 class="text-break">New restaurant</h1> <br>
+
+<%= render "form", restaurant: @restaurant %>
+
+<br>
+
+<%= render 'home/restourants' %>
+  <% else %>
+
+<%= render 'register' %>
+
+
+<% end %>
